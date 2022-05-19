@@ -1,0 +1,115 @@
+.resume {
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 419px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                top:50%;
+                left: -7px;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content:'';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    top: -16px;
+                    left: 0;
+                    background-color:#000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            position: absolute;
+            content:'';
+            height: 1px;
+            width: 45px;
+            top: 68px;
+            background-color: #000;
+        }
+        .small {
+            top: 61px;
+            img {
+                top: 0;
+                left: 20px;
+            }
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            margin-bottom: 0;
+            .fw500 {
+                font-weight: 500;
+                padding-top: 5px;
+            }
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            &::before {
+                content: '';
+                width: 36px;
+                height: 36px;
+                background: $main-color;
+                position: absolute;
+                border-radius: 100%;
+                z-index: -1;
+                top: -25%;
+                left: 0;
+            }
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+        .small {
+            &::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                position: absolute;
+                border-radius: 100%;
+                z-index: -1;
+                top: -25%;
+                left: 0;
+            }   
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+        &-body {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
