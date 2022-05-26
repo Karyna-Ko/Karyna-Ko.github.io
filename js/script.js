@@ -28,7 +28,7 @@ $('.slide_from_right').click(() => {
     }, 600);
 });
 
-validateForms('#consultation-form');
+/* validateForms('#consultation-form'); */
 
 $('form').submit(function(e) {
     e.preventDefault();
